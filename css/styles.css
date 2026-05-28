@@ -24,22 +24,25 @@ h1 {
   padding-top:20px;
 }
 .ie h1 {
-  filter: dropshadow(color=#000000, offx=0, offy=3);
+  filter: dropshadow(color=#000000, offx=0, offy=3);  /* black */
   padding-bottom:12px;	
 }
 h2 {
+  color: #ff0000;  /* pure red */
   font-size:50px;
 }
 .ie h2 {
-  filter: dropshadow(color=#000000, offx=0, offy=3);
+  filter: dropshadow(color=#000000, offx=0, offy=3);  /* black */
+  color: #ff0000;  /* pure red */
 }
 h3 {
   font-size:25px;
+  color: #ff0000;  /* pure red */
   margin:0.2em 0; 
   text-align:center;
 }
 .ie h3 {
-  filter: dropshadow(color=#000000, offx=0, offy=3);
+  filter: dropshadow(color=#000000, offx=0, offy=3);  /* black */
 }
 h4 {
   margin-bottom:5px;
@@ -55,11 +58,11 @@ code {
 }
 
 a {
-  color:rgba(0, 210, 255, 1);
+  color:rgba(0, 210, 255, 1);  /* pure cyan */
   text-decoration:none;
 }
 a:hover {
-  color:#bbb;
+  color:#bbb;  /* gray */
 } 
 
 #Header {
@@ -209,11 +212,12 @@ a:hover {
   text-align: center;
   font-size: 48px;
   font-weight: 300;
-  color:#00d2ff;  /* pure cyan */
+  color:#ff0000;  /* pure red */
 }  /* id Content h2 */
 #Content h3 {
   text-align: center;
   font-size: 24px;
+  color:#ff0000;  /* pure red */
   font-weight: normal;
   display: block;
   clear: both;
@@ -263,14 +267,14 @@ a:hover {
   text-align: center;
 }  /* class styled div span */
 
-footer{
+footer {
   width:100%;
   height:30px;
   background:rgba(0, 0, 0, 0.64);
   position:absolute;
   bottom:0px;
 }  /* footer */
-  footer span{
+footer span {
   float:right;
   margin:10px;
 }  /* footer span */
@@ -286,7 +290,8 @@ footer{
 }  /* end max-width: 768px */
 
 @media(max-width:420px){
-  h1{
+  h1 {
+    color: #fff;  /* white */
     float:initial;
     text-align: center;
     margin-left:0px;
@@ -309,6 +314,7 @@ footer{
     padding: 0px;
     text-align: center;
     font-size: 29px;
+    color: #ff0000;  /* pure red */
     font-weight: 300;
   }
 footer{
@@ -328,14 +334,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #ffffff;  /* white */
   perspective: 800px;
 }
 div {
   transform-style: preserve-3d;
 }
 
-  @media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2000px) {
   /* for sumo sized (mac) screens */
   /* horizontal line */
   hr { 
@@ -347,8 +353,7 @@ div {
     margin-right: auto;
     border-style: inset;
     border-width: 2px;
-    background-color: red;
-    color: red;
+    background-color: #ff0000;  /* pure red */
     height: 2px;
   }
 /* unordered list styles */
